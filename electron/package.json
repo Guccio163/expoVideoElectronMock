@@ -1,0 +1,11 @@
+{
+  "name": "myapp-electron",
+  "main": "electron.js",
+  "scripts": {
+    "start": "cross-env ELECTRON_START_URL=http://localhost:8081 electron ."
+  },
+  "devDependencies": {
+    "electron": "^32",
+    "cross-env": "^7"
+  }
+}
