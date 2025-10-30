@@ -8,7 +8,6 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "electron": "cross-env ELECTRON_START_URL=http://localhost:8081 npx electron .",
     "lint": "expo lint",
     "dev": "concurrently \"npm start --web\" \"cd electron && npm start \""
   },
