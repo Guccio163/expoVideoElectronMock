@@ -9,13 +9,16 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "electron": "cross-env ELECTRON_START_URL=http://localhost:8081 npx electron .",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "dev": "concurrently \"npm start --web\" \"cd electron && npm start \""
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
     "@react-navigation/bottom-tabs": "^7.4.0",
     "@react-navigation/elements": "^2.6.3",
     "@react-navigation/native": "^7.1.8",
+    "concurrent": "^0.3.2",
+    "concurrently": "^9.2.1",
     "electron": "^39.0.0",
     "expo": "~54.0.20",
     "expo-constants": "~18.0.10",
